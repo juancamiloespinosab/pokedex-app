@@ -6,10 +6,15 @@ body, p, h1 {
 :root {
     --primary-color: #FF143C;
     --primary-color-light: #bd0f34;
-    --primary-color-solid: #810a1e;
+    --primary-color-dark: #810a1e;
     --grey-color: #262626;
     --grey-color-light: #dedede;
     --white-color: white;
+    --blue-color: #009dd4;
+    --blue-color-light: #0bcdff;
+    --red-color: #f10605;
+    --green-color: #00A62F;
+    --yellow-color: #F2EF1D;
 }
 
 /* ------------------------------------------------------- */
@@ -69,6 +74,18 @@ body, p, h1 {
     background-color: var(--white-color)
 }
 
+.bg-red-color {
+    background-color: var(--red-color);
+}
+
+.bg-green-color {
+    background-color: var(--green-color);
+}
+
+.bg-yellow-color {
+    background-color: var(--yellow-color);
+}
+
 /* text-color */
 
 .text-primary-color {
@@ -85,16 +102,20 @@ body, p, h1 {
 
 /* fonts */
 
-.font-londrina-solid-black {
-    font-family: 'Londrina Solid Black';
+.font-londrina-solid {
+    font-family: 'Londrina Solid Thin';
+}
+
+.font-cabin {
+    font-family: 'Cabin';
 }
 
 .font-size-small {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .font-size-medium {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .font-size-large {
@@ -102,5 +123,6 @@ body, p, h1 {
 }
 
 .font-size-extralarge {
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 600;
 }

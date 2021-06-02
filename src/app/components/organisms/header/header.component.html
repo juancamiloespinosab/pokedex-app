@@ -1,17 +1,13 @@
-<section class="header">
+<div class="led-container flex-center bg-primary-color">
+    <app-main-led class="main-led"></app-main-led>
+</div>
 
-    <div class="header__main-led-container flex-center bg-primary-color">
-        <app-main-led></app-main-led>
-    </div>
+<div class="title-container">
+    <app-leds class="leds"></app-leds>
+    <app-title></app-title>
 
-    <div class="header__title-container">
-        <app-leds></app-leds>
-        <app-title></app-title>
+</div>
 
-    </div>
-
-    <div class="header__search-container">
-        <app-search-box></app-search-box>
-    </div>
-
-</section>
+<div class="search-container">
+    <app-search-box class="search-box"></app-search-box>
+</div>

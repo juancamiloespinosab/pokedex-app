@@ -4,7 +4,13 @@
 @import url(styles/sections.css);
 @import url(styles/animations.css);
 @import url(styles/responsive.css);
+
 @font-face {
-    font-family: "Londrina Solid Black";
-    src: url(assets/fonts/londrina/LondrinaSolid-Black.ttf);
+    font-family: "Londrina Solid Thin";
+    src: url(assets/fonts/londrina/LondrinaSolid-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Cabin";
+    src: url(assets/fonts/cabin/Cabin-SemiBold.ttf);
 }
