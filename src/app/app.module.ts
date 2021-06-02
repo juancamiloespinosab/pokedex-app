@@ -17,6 +17,7 @@ import { CardComponent } from './components/molecules/card/card.component';
 import { HeaderComponent } from './components/organisms/header/header.component';
 import { GridComponent } from './components/organisms/grid/grid.component';
 import { MainComponent } from './components/pages/main/main.component';
+import { DetailsComponent } from './components/organisms/details/details.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MainComponent } from './components/pages/main/main.component';
     CardComponent,
     HeaderComponent,
     GridComponent,
-    MainComponent
+    MainComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
