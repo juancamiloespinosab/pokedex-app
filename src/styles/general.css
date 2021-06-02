@@ -6,6 +6,7 @@ body, p, h1 {
 :root {
     --primary-color: #FF143C;
     --primary-color-light: #bd0f34;
+    --primary-color-solid: #810a1e;
     --grey-color: #262626;
     --grey-color-light: #dedede;
     --white-color: white;
@@ -21,9 +22,20 @@ body, p, h1 {
     width: 100%;
 }
 
-.header {}
+.header {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(2, 50px);
+    position: sticky;
+    top: -1px;
+    z-index: 50;
+}
 
-.grid {}
+.grid {
+    margin-top: 20px;
+    flex-direction: column;
+}
 
 /* ------------------------------------------------------- */
 
