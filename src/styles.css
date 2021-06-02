@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+    font-family: "Londrina Solid Black";
+    src: url(assets/fonts/londrina/LondrinaSolid-Black.ttf);
+}
+
 @import url(styles/general.css);
 @import url(styles/sections.css);
 @import url(styles/animations.css);

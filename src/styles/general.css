@@ -1,0 +1,94 @@
+body, p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #FF143C;
+    --primary-color-light: #bd0f34;
+    --grey-color: #262626;
+    --grey-color-light: #dedede;
+    --white-color: white;
+}
+
+/* ------------------------------------------------------- */
+
+/* sections */
+
+/* ------------------------------------------------------- */
+
+.app, .header, .grid {
+    width: 100%;
+}
+
+.header {}
+
+.grid {}
+
+/* ------------------------------------------------------- */
+
+/* utils */
+
+/* ------------------------------------------------------- */
+
+/* display */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* background-color */
+
+.bg-primary-color {
+    background-color: var(--primary-color);
+}
+
+.bg-primary-color-light {
+    background-color: var(--primary-color-light)
+}
+
+.bg-grey-color-light {
+    background-color: var(--grey-color-light)
+}
+
+.bg-white-color {
+    background-color: var(--white-color)
+}
+
+/* text-color */
+
+.text-primary-color {
+    color: var(--primary-color);
+}
+
+.text-grey-color {
+    color: var(--grey-color)
+}
+
+.text-white-color {
+    color: var(--white-color)
+}
+
+/* fonts */
+
+.font-londrina-solid-black {
+    font-family: 'Londrina Solid Black';
+}
+
+.font-size-small {
+    font-size: 10px;
+}
+
+.font-size-medium {
+    font-size: 12px;
+}
+
+.font-size-large {
+    font-size: 20px;
+}
+
+.font-size-extralarge {
+    font-size: 30px;
+}
