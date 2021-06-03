@@ -1,7 +1,6 @@
-<app-info></app-info>
-<app-image></app-image>
+<app-info [info]="data.info" ></app-info>
+<app-image [imgUrl]="data.imgUrl"></app-image>
 
 <div class="types">
-    <!-- ngFor -->
-    <app-type></app-type>
+    <app-type *ngFor="let type of data.types" [type]="type.type.name"></app-type>
 </div>
