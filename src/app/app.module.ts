@@ -22,6 +22,11 @@ import { MainComponent } from './components/pages/main/main.component';
 import { DetailsComponent } from './components/organisms/details/details.component';
 import { from } from 'rxjs';
 import { LoadingComponent } from './components/atoms/loading/loading.component';
+import { StatsComponent } from './components/molecules/stats/stats.component';
+import { StatComponent } from './components/atoms/stat/stat.component';
+import { AbilityComponent } from './components/atoms/ability/ability.component';
+import { AbilitiesComponent } from './components/molecules/abilities/abilities.component';
+import { CloseDetailsComponent } from './components/atoms/close-details/close-details.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +46,12 @@ import { LoadingComponent } from './components/atoms/loading/loading.component';
     GridComponent,
     MainComponent,
     DetailsComponent,
-    LoadingComponent
+    LoadingComponent,
+    StatsComponent,
+    StatComponent,
+    AbilityComponent,
+    AbilitiesComponent,
+    CloseDetailsComponent
   ],
   imports: [
     BrowserModule,

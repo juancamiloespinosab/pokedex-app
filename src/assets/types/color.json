@@ -1,0 +1,104 @@
+{
+    "list": [
+        {
+            "name": "normal",
+            "bg-color": "aliceblue",
+            "text-color": "black"
+        },
+        {
+            "name": "fighting",
+            "bg-color": "#FF143C",
+            "text-color": "white"
+        },
+        {
+            "name": "flying",
+            "bg-color": "aqua",
+            "text-color": "black"
+        },
+        {
+            "name": "poison",
+            "bg-color": "lime",
+            "text-color": "black"
+        },
+        {
+            "name": "ground",
+            "bg-color": "violet",
+            "text-color": "white"
+        },
+        {
+            "name": "rock",
+            "bg-color": "brown",
+            "text-color": "white"
+        },
+        {
+            "name": "bug",
+            "bg-color": "blueviolet",
+            "text-color": "white"
+        },
+        {
+            "name": "ghost",
+            "bg-color": "grey",
+            "text-color": "black"
+        },
+        {
+            "name": "steel",
+            "bg-color": "silver",
+            "text-color": "black"
+        },
+        {
+            "name": "fire",
+            "bg-color": "red",
+            "text-color": "white"
+        },
+        {
+            "name": "water",
+            "bg-color": "blue",
+            "text-color": "white"
+        },
+        {
+            "name": "grass",
+            "bg-color": "green",
+            "text-color": "white"
+        },
+        {
+            "name": "electric",
+            "bg-color": "mediumseagreen",
+            "text-color": "black"
+        },
+        {
+            "name": "psychic",
+            "bg-color": "orange",
+            "text-color": "white"
+        },
+        {
+            "name": "ice",
+            "bg-color": "white",
+            "text-color": "black"
+        },
+        {
+            "name": "dragon",
+            "bg-color": "yellow",
+            "text-color": "black"
+        },
+        {
+            "name": "dark",
+            "bg-color": "black",
+            "text-color": "white"
+        },
+        {
+            "name": "fairy",
+            "bg-color": "pink",
+            "text-color": "black"
+        },
+        {
+            "name": "unknown",
+            "bg-color": "white",
+            "text-color": "black"
+        },
+        {
+            "name": "shadow",
+            "bg-color": "teal",
+            "text-color": "white"
+        }
+    ]
+}

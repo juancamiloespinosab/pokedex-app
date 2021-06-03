@@ -1,7 +1,7 @@
 <!--infinity scroll-->
 <div *ngIf="pokeDataList" class="poke-list" infiniteScroll [infiniteScrollDistance]="0.9" (scrolled)="onScroll()">
     <!--ngFor-->
-    <app-card *ngFor="let pokemon of pokeDataList" class=" poke-card" [data]="pokemon">
+    <app-card (click)="openDetails(pokemon)" *ngFor="let pokemon of pokeDataList" class=" poke-card" [data]="pokemon">
     </app-card>
 </div>
 <app-loading></app-loading>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs'
 import { PokeApiService } from 'src/app/services/poke-api.service';
 
@@ -9,6 +9,8 @@ import { PokeApiService } from 'src/app/services/poke-api.service';
   styleUrls: ['./grid.component.css']
 })
 export class GridComponent implements OnInit {
+
+  @Output() detailsEvent: EventEmitter<any> = new EventEmitter();
 
   totalPages: number = 0;
   actualPage: number = 0;
@@ -28,6 +30,10 @@ export class GridComponent implements OnInit {
       this.pokeDataList.push(element)
 
     })
+  }
+
+  openDetails(e) {
+    this.detailsEvent.emit(e)    
   }
 
 

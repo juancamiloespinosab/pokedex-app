@@ -105,8 +105,6 @@
     letter-spacing: 20px;
 }
 
-/*************************************************/
-
 .header__search-container {
     position: relative;
     width: 100%;
@@ -172,6 +170,12 @@
     background-position: center;
 }
 
+/* ------------------------------------------------------- */
+
+/* grid */
+
+/* ------------------------------------------------------- */
+
 .grid {
     margin-top: 20px;
     width: 100%;
@@ -204,8 +208,6 @@
     width: 100%;
     height: 300px;
     background-color: #dedede;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%); */
-    /* clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%, 0 10%); */
     border-bottom: 3px solid #6a6b6f;
     border-left: 3px solid #6a6b6f;
     box-sizing: border-box;
@@ -216,6 +218,24 @@
     gap: 10px;
     padding: 20px 10px 0;
     animation: fade-in 5s;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .2s;
+}
+
+.poke-card--detail {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 65% 1fr;
+    gap: 10px;
+    padding: 10px 10px 0;
+}
+
+.poke-card:hover {
+    transform: scale(1.03);
 }
 
 .image {
@@ -230,7 +250,6 @@
 .poke-info {
     text-align: center;
     color: #262626;
-    font-size: 25px;
     align-self: center;
 }
 
@@ -242,13 +261,83 @@
 }
 
 .type {
+    padding: 5px 0;
     text-align: center;
     border-radius: 5px;
     color: white;
-    font-size: 20px;
 }
 
 .loading {
     width: 50px;
     animation: rotate 1.5s infinite;
+}
+
+/* ------------------------------------------------------- */
+
+/* details */
+
+/* ------------------------------------------------------- */
+
+.details {
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    z-index: 100;
+    bottom: -100%;
+    transition: bottom .2s;
+    animation: swipe-up .5s;
+}
+
+.details--open {
+    bottom: 0;
+}
+
+.detail-container {
+    position: relative;
+    width: 60%;
+    height: 50vh;
+    background-color: #dedede;
+    border-radius: 20px 20px 0 0;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 10px 2px #000000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr;
+}
+
+.details-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details-close {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    background-image: url(../assets/icons/arrow-down.png);
+    background-position: center;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #000000;
+}
+
+.details-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats {
+    /* width: 50%; */
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: left;
+    border-bottom: 1px solid grey;
+    padding: 2px;
 }

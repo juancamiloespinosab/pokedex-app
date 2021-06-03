@@ -1,1 +1,14 @@
-<p>details works!</p>
+<div *ngIf="data" class="detail-container">
+
+    <app-close-details (closeDetailsEvent)="onCloseDetails($event)" ></app-close-details>
+
+    <div class="details-info">
+        <app-card class="poke-card--detail" [data]="data"></app-card>
+        <div class="details-stats">
+            <app-stats class="stats" [stats]="data.stats"></app-stats>
+            <app-abilities class="stats" [abilities]="data.abilities"></app-abilities>
+        </div>
+
+    </div>
+
+</div>

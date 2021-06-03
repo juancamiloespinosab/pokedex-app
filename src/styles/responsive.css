@@ -5,6 +5,18 @@
     .header__title-container {
         justify-content: center;
     }
+
+    .detail-container {
+        width: 90%;
+    }
+
+    .details-info {
+        flex-direction: column;
+    }
+
+    .poke-card--detail {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 700px) {

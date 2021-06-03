@@ -1,7 +1,10 @@
-<div class="app">
+<app-details (closeDetailsEvent)="onCloseDetails()" *ngIf="pokeData" [data]="pokeData" [ngClass]="{'details--open': open}" class="details flex-center"></app-details>
+
+<div [ngClass]="{'app--disable': open}" class="app">
 
     <app-header class="header"></app-header>
 
-    <app-grid class="grid flex-center"></app-grid>
+    <app-grid (detailsEvent)="onOpenDetails($event)" class="grid flex-center"></app-grid>
+
 
 </div>

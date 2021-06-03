@@ -8,9 +8,23 @@ import { PokeApiService } from 'src/app/services/poke-api.service';
 })
 export class MainComponent implements OnInit {
 
+  pokeData = null;
+  open = false;
+
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+
+  onOpenDetails(e) {
+
+    this.pokeData = e;
+    this.open = true;
+  }
+
+  onCloseDetails() {
+    this.open = false;
 
   }
 
