@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +20,8 @@ import { HeaderComponent } from './components/organisms/header/header.component'
 import { GridComponent } from './components/organisms/grid/grid.component';
 import { MainComponent } from './components/pages/main/main.component';
 import { DetailsComponent } from './components/organisms/details/details.component';
+import { from } from 'rxjs';
+import { LoadingComponent } from './components/atoms/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +40,14 @@ import { DetailsComponent } from './components/organisms/details/details.compone
     HeaderComponent,
     GridComponent,
     MainComponent,
-    DetailsComponent
+    DetailsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
