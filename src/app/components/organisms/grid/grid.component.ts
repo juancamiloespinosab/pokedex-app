@@ -22,7 +22,7 @@ export class GridComponent implements OnInit {
 
   async getAllPokemons() {
     let pokeList = await this.pokeApiService.getAllPokemons(this.actualPage);
-    this.actualPage += 20;
+    this.actualPage += this.pokeApiService.LIMIT;
 
     pokeList.forEach(element => {
       this.pokeDataList.push(element)

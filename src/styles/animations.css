@@ -2,7 +2,16 @@
     from {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 100%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

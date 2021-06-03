@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class PokeApiService {
 
   private API_URL: string = 'https://pokeapi.co/api/v2';
-  private LIMIT: number = 50;
+  LIMIT: number = 50;
   private nextQuery: string = '';
 
 
