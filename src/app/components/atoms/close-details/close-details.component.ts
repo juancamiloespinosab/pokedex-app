@@ -16,7 +16,6 @@ export class CloseDetailsComponent implements OnInit {
 
   closeDetails() {
     this.closeDetailsEvent.emit()    
-    console.log(12);
     
   }
 
